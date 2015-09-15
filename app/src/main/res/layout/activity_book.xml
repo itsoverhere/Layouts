@@ -1,0 +1,40 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.mobidev.lablayouts.BookActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        app:layout_heightPercent = "90%"
+        app:layout_widthPercent = "100%"
+        android:text="@string/hello_world"
+        android:scaleType="centerCrop"
+        android:src="@drawable/undergroundriver"
+        />
+
+    <Button
+        android:id="@+id/button_throw"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="50%"
+        android:background="#6f3332"
+        android:textColor="#ffffff"
+        android:layout_below="@id/image"
+        android:textAllCaps="true"
+        android:text="Throw"/>
+
+
+
+    <Button
+        android:id="@+id/button_keep"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="50%"
+        android:background="#1b621d"
+        android:textColor="#ffffff"
+        android:layout_below="@id/image"
+        android:layout_toRightOf="@id/button_throw"
+        android:textAllCaps="true"
+        android:text="Keep"/>
+
+</android.support.percent.PercentRelativeLayout>
